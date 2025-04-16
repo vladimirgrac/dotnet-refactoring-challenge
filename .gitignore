@@ -1,0 +1,52 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.rsbak
+*.rsmobile
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Rider/JetBrains IDE
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+packages/
+
+# Temporary files
+*.tmp
+*.cache
+*.pdb
+*.tlog
+*.ide
+
+# Database
+*.mdf
+*.ldf
+
+# Others
+*.class
+*.pyc
+*.dbmdl
+*.jfm
+*.csv
+*.pyo
+*.env

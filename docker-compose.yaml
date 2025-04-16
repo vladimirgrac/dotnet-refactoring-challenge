@@ -1,0 +1,15 @@
+﻿services:
+  refactoringchallenge:
+    image: refactoringchallenge
+    build:
+      context: .
+      dockerfile: RefactoringChallenge/Dockerfile
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "RCPassword1!"
