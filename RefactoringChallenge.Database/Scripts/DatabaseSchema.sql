@@ -1,4 +1,4 @@
-CREATE DATABASE refactoringchallenge;
+﻿CREATE DATABASE refactoringchallenge;
 GO
 
 USE refactoringchallenge;

@@ -5,7 +5,13 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
 COPY ["RefactoringChallenge/RefactoringChallenge.csproj", "RefactoringChallenge/"]
+COPY ["RefactoringChallenge.Bussiness/RefactoringChallenge.Bussiness.csproj", "RefactoringChallenge.Bussiness/"]
+COPY ["RefactoringChallenge.Data/RefactoringChallenge.Data.csproj", "RefactoringChallenge.Data/"]
+COPY ["RefactoringChallenge.Infrastructure/RefactoringChallenge.Infrastructure.csproj", "RefactoringChallenge.Infrastructure/"]
+COPY ["RefactoringChallenge.Model/RefactoringChallenge.Model.csproj", "RefactoringChallenge.Model/"]
+
 RUN dotnet restore "RefactoringChallenge/RefactoringChallenge.csproj"
 COPY . .
 WORKDIR "/src/RefactoringChallenge"
